@@ -10,7 +10,7 @@ endif
 
 let g:vim_bootstrap_langs = "c,haskell,html,javascript,lua,perl,php,python,ruby,rust,typescript"
 let g:vim_bootstrap_editor = "nvim"				" nvim or vim
-let g:vim_bootstrap_theme = "default"
+let g:vim_bootstrap_theme = "peachpuff"
 let g:vim_bootstrap_frams = "svelte"
 
 if !filereadable(vimplug_exists)
@@ -69,7 +69,7 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 
 "" Snippets
-Plug 'SirVer/ultisnips' {'version','1.3'}
+Plug 'SirVer/ultisnips' {'tag','1.3'}
 Plug 'honza/vim-snippets'
 
 "*****************************************************************************
