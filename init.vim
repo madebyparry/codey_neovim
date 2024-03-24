@@ -69,7 +69,7 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 
 "" Snippets
-Plug 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips' {'version','1.3'}
 Plug 'honza/vim-snippets'
 
 "*****************************************************************************
