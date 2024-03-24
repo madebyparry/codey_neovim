@@ -10,7 +10,7 @@ endif
 
 let g:vim_bootstrap_langs = "c,haskell,html,javascript,lua,perl,php,python,ruby,rust,typescript"
 let g:vim_bootstrap_editor = "nvim"				" nvim or vim
-let g:vim_bootstrap_theme = "solarized"
+let g:vim_bootstrap_theme = "default"
 let g:vim_bootstrap_frams = "svelte"
 
 if !filereadable(vimplug_exists)
@@ -48,7 +48,9 @@ Plug 'Yggdroot/indentLine'
 Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :GBrowse
 Plug 'altercation/vim-colors-solarized'
-
+Plug 'EdenEast/nightfox.nvim'
+Plug 'rose-pine/neovim'
+Plug 'navarasu/onedark.nvim'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -719,4 +721,3 @@ else
 endif
 
 lua require("mbp")
-
