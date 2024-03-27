@@ -10,7 +10,7 @@ endif
 
 let g:vim_bootstrap_langs = "c,haskell,html,javascript,lua,perl,php,python,ruby,rust,typescript"
 let g:vim_bootstrap_editor = "nvim"				" nvim or vim
-let g:vim_bootstrap_theme = "onedarker"
+let g:vim_bootstrap_theme = "nordic"
 let g:vim_bootstrap_frams = "svelte"
 
 if !filereadable(vimplug_exists)
@@ -49,7 +49,6 @@ Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :GBrowse
 
 "" Colorchemes
-Plug 'altercation/vim-colors-solarized'
 Plug 'navarasu/onedark.nvim'
 Plug 'mcchrish/zenbones.nvim'
 Plug 'lunarvim/Onedarker.nvim'
@@ -197,8 +196,7 @@ set fileencodings=utf-8
 
 "" Colors
 set termguicolors
-colorscheme onedark 
-"" colorscheme nordic
+"colorscheme nordic 
     
 "" Fix backspace indent
 set backspace=indent,eol,start
@@ -312,7 +310,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-" let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'onedark'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
