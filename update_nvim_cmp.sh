@@ -13,7 +13,7 @@ echo "downloading latest neovim stable"
 echo
 echo "-------------------------------------------"
 echo
-wget -O https://github.com/neovim/neovim/archive/refs/tags/stable.zip ~/.config/neovim/stable.zip
+wget https://github.com/neovim/neovim/archive/refs/tags/stable.zip | ~/.config/nvim/stable.zip 
 unzip stable.zip
 cd neovim-stable/
 echo
