@@ -3,3 +3,8 @@ plugged/*
 nvim-linux64.tar.gz
 neovim-stable
 stable.zip
+lazy-lock.json
+neovim-stable
+stable.zip
+stable.zip*
+
