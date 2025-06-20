@@ -37,6 +37,11 @@ function install_lazygit() {
   sudo install lazygit /usr/local/bin
 }
 
+function install_fzf() {
+  print_status "Installing fzf (via apt)"
+  sudo apt install fzf
+}
+
 print_status "removing current neovim"
 sudo apt remove neovim
 #
@@ -59,6 +64,13 @@ esac
 read -p "Install Lazygit? (y/n)?" choice
 case "$choice" in
 y | Y) install_lazygit ;;
+n | N) echo "Skipping" ;;
+*) echo "invalid selection - skipping" ;;
+esac
+
+read -p "Install fzf? (Fuzzyfinder - used in Codeium, treesitter, and replacement for Telescope) (y/n)?" choice
+case "$choice" in
+y | Y) install_fzf ;;
 n | N) echo "Skipping" ;;
 *) echo "invalid selection - skipping" ;;
 esac

@@ -1,5 +1,5 @@
 return {
-  { "mcchrish/zenbones.nvim" },
+  -- { "mcchrish/zenbones.nvim" },
   { "AlexvZyl/nordic.nvim" },
 
   -- Configure LazyVim to load gruvbox
